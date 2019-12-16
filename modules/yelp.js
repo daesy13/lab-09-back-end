@@ -9,17 +9,17 @@ function getYelp(req, res){
     // console.log('response.text', JSON.parse(response.text).businesses);
     const allBusinesses = JSON.parse(response.text).businesses;
   
-   const allData = allBusinesses.map(event => {
-     return {
-       'url': event.url,
-       'name': event.name,
-       'rating': event.rating,
-       'price': event.price,
-       'image_url': event.image_url
-     };
+    const allData = allBusinesses.map(event => {
+      return {
+        'url': event.url,
+        'name': event.name,
+        'rating': event.rating,
+        'price': event.price,
+        'image_url': event.image_url
+      };
    })
   //  console.log('allData', allData)
-   res.send(allData);
+  res.send(allData);
   });
 }
 

@@ -17,7 +17,6 @@ const getEvents = require('./modules/events');
 const getMovies = require('./modules/movies');
 const getYelp = require('./modules/yelp');
 
-
 // ROUTES
 app.get('/location', getLocation);
 app.get('/weather', getWeather);
